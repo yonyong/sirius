@@ -10,7 +10,7 @@
     </parent>
     <groupId>top.yonyong</groupId>
     <artifactId>sirius</artifactId>
-    <version>1.0.0.SNASHOP</version>
+    <version>1.0.0</version>
     <name>sirius</name>
     <packaging>jar</packaging>
     <description>demo for sirius</description>
