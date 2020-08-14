@@ -3,7 +3,7 @@ package top.yonyong.sirius.system;
 /**
  * @author yonyong
  **/
-public class SystemJavaInfo {
+public class DefaultSiriusSystemJavaInfo {
 
     public static String getJavaVersion() {
         //java版本号

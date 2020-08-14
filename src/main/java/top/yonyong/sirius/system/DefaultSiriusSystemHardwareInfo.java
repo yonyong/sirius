@@ -12,7 +12,7 @@ import java.net.NetworkInterface;
 /**
  * @author yonyong
  **/
-public class SystemHardwareInfo extends Applet {
+public class DefaultSiriusSystemHardwareInfo extends Applet {
 
     public static void main(String[] args) throws Exception {
         //CPU
@@ -30,10 +30,10 @@ public class SystemHardwareInfo extends Applet {
     public void paint(Graphics paint) {
         super.paint(paint);
         paint.drawString("获取硬件信息", 10, 10);
-        paint.drawString("CPU  SN:" + SystemHardwareInfo.getCPUSerial(), 10, 30);
-        paint.drawString("主板  SN:" + SystemHardwareInfo.getMotherboardSN(), 10, 50);
-        paint.drawString("C盘   SN:" + SystemHardwareInfo.getHardDiskSN("c"), 10, 70);
-        paint.drawString("MAC  SN:" + SystemHardwareInfo.getMac(), 10, 90);
+        paint.drawString("CPU  SN:" + DefaultSiriusSystemHardwareInfo.getCPUSerial(), 10, 30);
+        paint.drawString("主板  SN:" + DefaultSiriusSystemHardwareInfo.getMotherboardSN(), 10, 50);
+        paint.drawString("C盘   SN:" + DefaultSiriusSystemHardwareInfo.getHardDiskSN("c"), 10, 70);
+        paint.drawString("MAC  SN:" + DefaultSiriusSystemHardwareInfo.getMac(), 10, 90);
     }
 
     public static String getMac() {

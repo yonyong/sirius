@@ -7,27 +7,27 @@ public final class SysInfo {
 
     private SysInfo(){}
 
-    public static class JavaInfo extends SystemJavaInfo {
+    public static class Java extends DefaultSiriusSystemJavaInfo {
 
     }
 
-    public static class OsInfo extends SystemOsInfo{
+    public static class Os extends DefaultSiriusSystemOsInfo {
 
     }
 
-    public static class HardwareInfo extends SystemHardwareInfo{
+    public static class Hardware extends DefaultSiriusSystemHardwareInfo {
 
     }
 
-    public static class ComputerInfo extends SystemComputerInfo{
+    public static class Computer extends DefaultSiriusSystemComputerInfo {
 
     }
 
-    public static class MemoryInfo extends SystemMemoryInfo{
+    public static class Memory extends DefaultSiriusSystemMemoryInfo {
 
     }
 
-    public static class CPUInfo extends SystemCPUInfo{
+    public static class Cpu extends DefaultSiriusSystemCPUInfo {
 
     }
 }

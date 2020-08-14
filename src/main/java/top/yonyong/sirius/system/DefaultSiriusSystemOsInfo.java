@@ -5,7 +5,7 @@ import java.util.TimeZone;
 /**
  * @author yonyong
  **/
-public class SystemOsInfo {
+public class DefaultSiriusSystemOsInfo {
 
     public static String getOsName(){
         //操作系统名称

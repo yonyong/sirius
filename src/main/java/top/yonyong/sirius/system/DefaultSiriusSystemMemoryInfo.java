@@ -7,7 +7,7 @@ import java.lang.management.ManagementFactory;
 /**
  * @author yonyong
  **/
-public class SystemMemoryInfo {
+public class DefaultSiriusSystemMemoryInfo {
 
     public static String getTotalMemory() {
         //获取总的物理内存
@@ -27,16 +27,13 @@ public class SystemMemoryInfo {
         //获取内存使用率
         OperatingSystemMXBean osmxb = (OperatingSystemMXBean) ManagementFactory.getOperatingSystemMXBean();
         long totalvirtualMemory = osmxb.getTotalSwapSpaceSize();
-        System.out.println(totalvirtualMemory* 1.0 / 1024 / 1024 + "M");
-
         long freePhysicalMemorySize = osmxb.getFreePhysicalMemorySize();
-        System.out.println(freePhysicalMemorySize* 1.0 / 1024 / 1024 + "M");
 
-        Double compare=(Double)(1-freePhysicalMemorySize*1.0/totalvirtualMemory)*100;
+        Double compare= (1-freePhysicalMemorySize*1.0/totalvirtualMemory) *100;
         return compare.intValue()+"%";
     }
 
     public static void main(String[] args) {
-        System.out.println(SystemMemoryInfo.getTotalMemory());
+        System.out.println(DefaultSiriusSystemMemoryInfo.getTotalMemory());
     }
 }

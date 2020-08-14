@@ -10,7 +10,7 @@ import java.util.Map;
 /**
  * @author yonyong
  **/
-public class SystemComputerInfo {
+public class DefaultSiriusSystemComputerInfo {
 
     private static final Map<String, String> MAP = System.getenv();
 

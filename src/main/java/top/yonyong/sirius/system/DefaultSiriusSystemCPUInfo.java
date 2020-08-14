@@ -6,10 +6,10 @@ import java.io.LineNumberReader;
 /**
  * @author yonyong
  **/
-public class SystemCPUInfo {
+public class DefaultSiriusSystemCPUInfo {
 
     public static void main(String[] args) {
-        System.out.println(SystemCPUInfo.getWinCPUsage());
+        System.out.println(DefaultSiriusSystemCPUInfo.getWinCPUsage());
     }
 
     public static String  getWinCPUsage() {
